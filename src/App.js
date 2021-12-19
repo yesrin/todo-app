@@ -7,22 +7,17 @@ const App = () => {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: '리액트의 기초 알아보기',
-      checked: true,
+      text: '오늘 할 일을 입력해 보세요',
+      checked: false,
     },
     {
       id: 2,
-      text: '컴포넌트 스타일링 해보기',
+      text: '끝낸 일을 체크 할 수 있습니다.',
       checked: true,
-    },
-    {
-      id: 3,
-      text: '일정 관리 앱 만들어 보기',
-      checked: false,
     },
   ]);
 
-  const nextId = useRef(4);
+  const nextId = useRef(2);
 
   const onInsert = useCallback(
     (text) => {
